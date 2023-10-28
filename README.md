@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+```markdown
+# Compliance Seeker
 
-First, run the development server:
+Compliance Seeker is a web application designed to test websites for cross-border data transfer compliance. The application checks if websites transfer personal data outside of the EU without adequate safeguards, and looks for instances where data is sent to countries without an adequate level of data protection or without the use of appropriate mechanisms such as Standard Contractual Clauses or Binding Corporate Rules.
 
+## Setup
+
+### Prerequisites
+
+- Node.js (v14.x or later recommended)
+- npm (v6.x or later recommended)
+
+### Installing Dependencies
+
+1. Navigate to the project root directory.
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd path/to/compliance-seeker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the necessary dependencies.
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Navigate to the project root directory if you are not already there.
+```bash
+cd path/to/compliance-seeker
+```
 
-## Learn More
+2. Start the Next.js development server.
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The application should now be running on [http://localhost:3000](http://localhost:3000). You can access it in your web browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Starting the Backend Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Navigate to the `backend` directory from the project root.
+```bash
+cd backend
+```
 
-## Deploy on Vercel
+2. Install the necessary dependencies if you haven't already.
+```bash
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Start the backend server.
+```bash
+node server.mjs
+```
+   - Alternatively, if you have set up a script in your `package.json` to start the server, you can use that instead. For example, if you have a script named `start`, you would run:
+```bash
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Now the backend server should be running on [http://localhost:3001](http://localhost:3001). It's ready to handle requests from the frontend part of the Compliance Seeker application.
+
+## Contributing
+
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to the project.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+```
+
